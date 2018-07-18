@@ -11,6 +11,15 @@ events: {
 setup: {
     //이름 바꾸는 함수
     //긴 랜덤토큰 생성 함수(RSA 참고)
+    const NodeRSA = require('node-rsa');
+    const key = new NodeRSA({b: 512});
+ 
+    const text = 'Hello RSA!';
+    const encrypted = key.encrypt(text, 'base64');
+    console.log('encrypted: ', encrypted);
+    const decrypted = key.decrypt(encrypted, 'utf8');
+    console.log('decrypted: ', decrypted);
+    // npm install node-rsa
 }
 astp: {
     var distanceWall;
@@ -19,6 +28,17 @@ astp: {
 token: {
     var passWord;
     //인증키가 맞는지 확인하는 과정(RSA 참고)
+    // npm install node-rsa
+    const NodeRSA = require('node-rsa');
+    const key = new NodeRSA({b: 512});
+ 
+    const text = 'Hello RSA!';
+    const encrypted = key.encrypt(text, 'base64');
+    console.log('encrypted: ', encrypted);
+    const decrypted = key.decrypt(encrypted, 'utf8');
+    console.log('decrypted: ', decrypted);
+
+
 }
 speed: {
     var wheelchairSpeed;

@@ -1,6 +1,7 @@
 
 var isRunning = 1;
 var notRunning = 1;
+//낙타 표기법 잘 지키고.
 
 URLreceive: {
     //http server require
@@ -52,10 +53,12 @@ back: {
 }
 locQ: {
     //https://github.com/google/google-api-nodejs-client 참고해서 진행할 예정
+    //npm install googlemaps
 }
 turnL: {
 
 }
 turnR: {
     //모터 조정하는 npm 패키지 받아 조정.
+    
 }

@@ -1,7 +1,7 @@
 
 var isRunning = 1;
 var notRunning = 1;
-//낙타 표기법 잘 지키고.
+//낙타 표기법
 
 URLreceive: {
     //http server require

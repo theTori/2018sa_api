@@ -24,7 +24,11 @@ setup: {
 }
 astp: {
     var distanceWall;
-    //if(distanceWall <= 안전한 거리)
+    var safeGap;// 안전한 거리를 나타내는 값으로 초기화
+    
+    if(distanceWall <= safeGap){
+        // stop 명령 걸어준다
+    }
 }
 token: {
     var passWord;
@@ -60,6 +64,7 @@ back: {
 locQ: {
     //https://github.com/google/google-api-nodejs-client 참고해서 진행할 예정
     //npm install googlemaps
+    var x, y;
 }
 turnL: {
 

@@ -54,12 +54,7 @@ speed: {
         wheelchairSpeed = -5;
     }
     //입력 들어오면 if문으로 상황 구분 후 ++나 --로 속도 조절
-}
-go: {
-
-}
-back: {
-
+    //speed가 양수면 앞으로. 아니면 뒤로 조절.
 }
 locQ: {
     //https://github.com/google/google-api-nodejs-client 참고해서 진행할 예정

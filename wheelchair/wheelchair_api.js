@@ -59,10 +59,16 @@ speed: {
 locQ: {
     //https://github.com/google/google-api-nodejs-client 참고해서 진행할 예정
     //npm install googlemaps
-    var x, y;
+    var locX, locY;// 위치변수 저장할 변수
+    /*
+
+    locX = 구글 api 이용하여 저장
+    locY 역시 마찬가지.
+
+    */
 }
 turnL: {
-
+    //모터 조정하는 npm 패키지 받아 조정.
 }
 turnR: {
     //모터 조정하는 npm 패키지 받아 조정.

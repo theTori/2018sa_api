@@ -5,6 +5,7 @@ var notRunning = 1;
 
 URLreceive: {
     //http server require
+    var http = require('http');
 }
 events: {
     //행동을 URL Scheme에서 가져오는 내용 넣어야.

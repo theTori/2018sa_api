@@ -5,7 +5,16 @@ var notRunning = 1;
 
 URLreceive: {
     //http server require
-    var http = require('http');
+    /*
+    const http = require('http');
+    http.createServer((req, res) => {
+        res.writeHead(200, {'Content-Type': 'text/plain'});
+        res.end('Hello, World!\n');
+    }).listen(1337, '127.0.0.1');
+    console.log('Server running at http://127.0.0.1:1337/');
+
+    이런 방법으로 node.js 의 비동기 활용.
+    */
 }
 events: {
     //행동을 URL Scheme에서 가져오는 내용 넣어야.

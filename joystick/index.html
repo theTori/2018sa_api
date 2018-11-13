@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="js/underscore-min.js"></script>
+        <script type="text/javascript" src="js/backbone-min.js"></script>
+        <script type="text/javascript" src="js/joystick_view.js"></script>
+        <script type="text/css" src="css/style.css"></script>
+    </head>
+    <body>
+
+    <script type="text/html" id="joystick-view">
+    <!--
+    <canvas id="joystickCanvas" width="<%= squareSize %>" height="<%= squareSize %>" style="width: <%= squareSize %>px; height: <%= squareSize %>px;">
+    -->
+    <canvas id="joystickCanvas">
+        <!-- The Joystick Goes Here -->
+    </canvas>
+    </script>
+    <div id="menuBar">
+        <h1>CMI Demo</h1>
+
+    </div>
+    <div id="joystickContent">
+    </div>
+    <div>
+        <p>x: <span id="xVal"></span></p>
+        <p>y: <span id="yVal"></span></p>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var joystickView = new JoystickView(150, function(callbackView){
+                $("#joystickContent").append(callbackView.render().el);
+                setTimeout(function(){
+                    callbackView.renderSprite();
+                }, 0);
+            });
+            joystickView.bind("verticalMove", function(y){
+                $("#yVal").html(y.toFixed(2));
+            });
+            joystickView.bind("horizontalMove", function(x){
+                $("#xVal").html(x.toFixed(2));
+            });
+        });
+    </script>
+    </body>
+</html>
